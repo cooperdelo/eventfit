@@ -1,0 +1,9 @@
+/**
+ * Stripe configuration
+ * Copy this file to stripeConfig.ts and fill in your Stripe keys
+ */
+export const stripeConfig = {
+  publishableKey: 'pk_test_your_publishable_key',
+  // Server-side key should be in environment variables only
+};
+

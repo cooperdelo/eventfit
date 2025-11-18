@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run lint-staged
+npx lint-staged
+
+# Run design token validation
+node scripts/validate-design-tokens.js
+
+# Check for duplicate components
+node scripts/check-component-duplicates.js
+
